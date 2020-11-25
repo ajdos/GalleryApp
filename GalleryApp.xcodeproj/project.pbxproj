@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		F3ACF31C256EB56D00BB4739 /* ModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF31B256EB56D00BB4739 /* ModuleTransitionHandler.swift */; };
 		F3ACF322256EB99900BB4739 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF321256EB99900BB4739 /* HomeCell.swift */; };
 		F3ACF325256EBA2400BB4739 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF324256EBA2400BB4739 /* ImageModel.swift */; };
+		F3ACF32A256EBF2500BB4739 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF329256EBF2500BB4739 /* HomeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F3ACF31B256EB56D00BB4739 /* ModuleTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionHandler.swift; sourceTree = "<group>"; };
 		F3ACF321256EB99900BB4739 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		F3ACF324256EBA2400BB4739 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		F3ACF329256EBF2500BB4739 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,6 @@
 				A5708FEBD0AE9A4BD7766B28 /* Pods-GalleryApp.debug.xcconfig */,
 				D1402983D8D5E2F4E1CB2563 /* Pods-GalleryApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +105,7 @@
 				F3ACF2E8256EABB600BB4739 /* Info.plist */,
 				F3ACF2F1256EAD9900BB4739 /* Application */,
 				F3ACF2F3256EADC700BB4739 /* Modules */,
+				F3ACF328256EBF0F00BB4739 /* Service */,
 				F3ACF308256EB0B500BB4739 /* Common */,
 				F3ACF2F2256EADB500BB4739 /* Resources */,
 			);
@@ -224,6 +226,14 @@
 				F3ACF321256EB99900BB4739 /* HomeCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		F3ACF328256EBF0F00BB4739 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACF329256EBF2500BB4739 /* HomeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +358,7 @@
 				F3ACF322256EB99900BB4739 /* HomeCell.swift in Sources */,
 				F3ACF2DF256EABB200BB4739 /* HomeViewController.swift in Sources */,
 				F3ACF319256EB30300BB4739 /* CollectionCellConfigurator.swift in Sources */,
+				F3ACF32A256EBF2500BB4739 /* HomeService.swift in Sources */,
 				F3ACF30B256EB14A00BB4739 /* Assembly.swift in Sources */,
 				F3ACF303256EB09A00BB4739 /* HomeAssembly.swift in Sources */,
 				F3ACF2DB256EABB200BB4739 /* AppDelegate.swift in Sources */,
