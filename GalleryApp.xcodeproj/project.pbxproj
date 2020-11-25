@@ -11,6 +11,16 @@
 		F3ACF2DF256EABB200BB4739 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF2DE256EABB200BB4739 /* HomeViewController.swift */; };
 		F3ACF2E4256EABB600BB4739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ACF2E3256EABB600BB4739 /* Assets.xcassets */; };
 		F3ACF2E7256EABB600BB4739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACF2E5256EABB600BB4739 /* LaunchScreen.storyboard */; };
+		F3ACF2FC256EB07800BB4739 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF2FB256EB07800BB4739 /* HomePresenter.swift */; };
+		F3ACF2FF256EB08600BB4739 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF2FE256EB08600BB4739 /* HomeInteractor.swift */; };
+		F3ACF303256EB09A00BB4739 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF302256EB09A00BB4739 /* HomeAssembly.swift */; };
+		F3ACF306256EB0A600BB4739 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF305256EB0A600BB4739 /* HomeRouter.swift */; };
+		F3ACF30B256EB14A00BB4739 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF30A256EB14A00BB4739 /* Assembly.swift */; };
+		F3ACF310256EB2CE00BB4739 /* TableCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF30F256EB2CE00BB4739 /* TableCellConfigurator.swift */; };
+		F3ACF313256EB2E000BB4739 /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF312256EB2E000BB4739 /* CellConfigurator.swift */; };
+		F3ACF316256EB2EF00BB4739 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF315256EB2EF00BB4739 /* Configurable.swift */; };
+		F3ACF319256EB30300BB4739 /* CollectionCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF318256EB30300BB4739 /* CollectionCellConfigurator.swift */; };
+		F3ACF31C256EB56D00BB4739 /* ModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF31B256EB56D00BB4739 /* ModuleTransitionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		F3ACF2E3256EABB600BB4739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3ACF2E6256EABB600BB4739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3ACF2E8256EABB600BB4739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3ACF2FB256EB07800BB4739 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F3ACF2FE256EB08600BB4739 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		F3ACF302256EB09A00BB4739 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		F3ACF305256EB0A600BB4739 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		F3ACF30A256EB14A00BB4739 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		F3ACF30F256EB2CE00BB4739 /* TableCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellConfigurator.swift; sourceTree = "<group>"; };
+		F3ACF312256EB2E000BB4739 /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		F3ACF315256EB2EF00BB4739 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		F3ACF318256EB30300BB4739 /* CollectionCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellConfigurator.swift; sourceTree = "<group>"; };
+		F3ACF31B256EB56D00BB4739 /* ModuleTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				F3ACF2D9256EABB200BB4739 /* GalleryApp */,
-				F3ACF2E8256EABB600BB4739 /* Info.plist */,
 				F3ACF2D8256EABB200BB4739 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,8 +72,10 @@
 		F3ACF2D9256EABB200BB4739 /* GalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3ACF2E8256EABB600BB4739 /* Info.plist */,
 				F3ACF2F1256EAD9900BB4739 /* Application */,
 				F3ACF2F3256EADC700BB4739 /* Modules */,
+				F3ACF308256EB0B500BB4739 /* Common */,
 				F3ACF2F2256EADB500BB4739 /* Resources */,
 			);
 			path = GalleryApp;
@@ -100,6 +121,8 @@
 		F3ACF2F6256EAE3000BB4739 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				F3ACF302256EB09A00BB4739 /* HomeAssembly.swift */,
+				F3ACF305256EB0A600BB4739 /* HomeRouter.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -107,6 +130,7 @@
 		F3ACF2F7256EAE3800BB4739 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				F3ACF2FE256EB08600BB4739 /* HomeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -114,6 +138,7 @@
 		F3ACF2F8256EAE3D00BB4739 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F3ACF2FB256EB07800BB4739 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -131,6 +156,35 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F3ACF308256EB0B500BB4739 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACF30D256EB25100BB4739 /* CellConfigurator */,
+				F3ACF309256EB13B00BB4739 /* Assembly */,
+				F3ACF31B256EB56D00BB4739 /* ModuleTransitionHandler.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F3ACF309256EB13B00BB4739 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACF30A256EB14A00BB4739 /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		F3ACF30D256EB25100BB4739 /* CellConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACF30F256EB2CE00BB4739 /* TableCellConfigurator.swift */,
+				F3ACF312256EB2E000BB4739 /* CellConfigurator.swift */,
+				F3ACF315256EB2EF00BB4739 /* Configurable.swift */,
+				F3ACF318256EB30300BB4739 /* CollectionCellConfigurator.swift */,
+			);
+			path = CellConfigurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ACF316256EB2EF00BB4739 /* Configurable.swift in Sources */,
+				F3ACF2FC256EB07800BB4739 /* HomePresenter.swift in Sources */,
+				F3ACF310256EB2CE00BB4739 /* TableCellConfigurator.swift in Sources */,
+				F3ACF31C256EB56D00BB4739 /* ModuleTransitionHandler.swift in Sources */,
+				F3ACF306256EB0A600BB4739 /* HomeRouter.swift in Sources */,
+				F3ACF313256EB2E000BB4739 /* CellConfigurator.swift in Sources */,
 				F3ACF2DF256EABB200BB4739 /* HomeViewController.swift in Sources */,
+				F3ACF319256EB30300BB4739 /* CollectionCellConfigurator.swift in Sources */,
+				F3ACF30B256EB14A00BB4739 /* Assembly.swift in Sources */,
+				F3ACF303256EB09A00BB4739 /* HomeAssembly.swift in Sources */,
 				F3ACF2DB256EABB200BB4739 /* AppDelegate.swift in Sources */,
+				F3ACF2FF256EB08600BB4739 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

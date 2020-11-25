@@ -7,8 +7,14 @@
 
 import UIKit
 
+protocol HomeViewInput: class {
+    
+}
+
 final class HomeViewController: UIViewController {
 
+    var presenter: HomeViewOutput?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
@@ -17,3 +23,6 @@ final class HomeViewController: UIViewController {
 
 }
 
+extension HomeViewController: HomeViewInput {
+    
+}
