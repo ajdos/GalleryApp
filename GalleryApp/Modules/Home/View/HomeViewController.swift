@@ -15,11 +15,18 @@ final class HomeViewController: UIViewController {
 
     var presenter: HomeViewOutput?
     
+    private var collectionView = UICollectionView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        presenter?.viewIsReady()
+        setupSubviews()
     }
 
+    private func setupSubviews() {
+        view.backgroundColor = .green
+
+    }
 
 }
 
