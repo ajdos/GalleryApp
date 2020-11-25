@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0A35E514AD26944AA4478D /* Pods_GalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D321EDE5B56A1BCAD27ABD8 /* Pods_GalleryApp.framework */; };
 		F3ACF2DB256EABB200BB4739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF2DA256EABB200BB4739 /* AppDelegate.swift */; };
 		F3ACF2DF256EABB200BB4739 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF2DE256EABB200BB4739 /* HomeViewController.swift */; };
 		F3ACF2E4256EABB600BB4739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ACF2E3256EABB600BB4739 /* Assets.xcassets */; };
@@ -26,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D321EDE5B56A1BCAD27ABD8 /* Pods_GalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5708FEBD0AE9A4BD7766B28 /* Pods-GalleryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryApp.debug.xcconfig"; path = "Target Support Files/Pods-GalleryApp/Pods-GalleryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D1402983D8D5E2F4E1CB2563 /* Pods-GalleryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GalleryApp.release.xcconfig"; path = "Target Support Files/Pods-GalleryApp/Pods-GalleryApp.release.xcconfig"; sourceTree = "<group>"; };
 		F3ACF2D7256EABB200BB4739 /* GalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ACF2DA256EABB200BB4739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3ACF2DE256EABB200BB4739 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -51,17 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0A35E514AD26944AA4478D /* Pods_GalleryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532EE57ED0EEC89307DA7AFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5708FEBD0AE9A4BD7766B28 /* Pods-GalleryApp.debug.xcconfig */,
+				D1402983D8D5E2F4E1CB2563 /* Pods-GalleryApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85B456EB93D35C04465A3EA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D321EDE5B56A1BCAD27ABD8 /* Pods_GalleryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F3ACF2CE256EABB200BB4739 = {
 			isa = PBXGroup;
 			children = (
 				F3ACF2D9256EABB200BB4739 /* GalleryApp */,
 				F3ACF2D8256EABB200BB4739 /* Products */,
+				532EE57ED0EEC89307DA7AFD /* Pods */,
+				85B456EB93D35C04465A3EA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3ACF2EB256EABB600BB4739 /* Build configuration list for PBXNativeTarget "GalleryApp" */;
 			buildPhases = (
+				661F2CFBF0E6755C05BC9507 /* [CP] Check Pods Manifest.lock */,
 				F3ACF2D3256EABB200BB4739 /* Sources */,
 				F3ACF2D4256EABB200BB4739 /* Frameworks */,
 				F3ACF2D5256EABB200BB4739 /* Resources */,
+				86740E9549AAD04DB510B8EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		661F2CFBF0E6755C05BC9507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GalleryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86740E9549AAD04DB510B8EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GalleryApp/Pods-GalleryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GalleryApp/Pods-GalleryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GalleryApp/Pods-GalleryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3ACF2D3256EABB200BB4739 /* Sources */ = {
@@ -419,6 +488,7 @@
 		};
 		F3ACF2EC256EABB600BB4739 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5708FEBD0AE9A4BD7766B28 /* Pods-GalleryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -437,6 +507,7 @@
 		};
 		F3ACF2ED256EABB600BB4739 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1402983D8D5E2F4E1CB2563 /* Pods-GalleryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
