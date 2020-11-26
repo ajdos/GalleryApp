@@ -8,14 +8,30 @@
 import Foundation
 
 protocol HomeInteractorInput {
-    
+    func getImages(pagination: [String: Any]?)
 }
 
 final class HomeInteractor {
    
     weak var presenter: HomeInteractorOutput?
+    private let homeService: HomeService
+    
+    init(homeService: HomeService) {
+        self.homeService = homeService
+    }
+    
 }
 
 extension HomeInteractor: HomeInteractorInput {
     
+    func getImages(pagination: [String: Any]?) {
+        homeService.getImages(pagination: pagination, ifSuccess: { [unowned self] (result) in
+            
+            self.presenter?.imagesLoaded(data: result)
+        }, ifFailure: {
+            
+            self.presenter?.errorLoaded()
+        })
+
+    }
 }

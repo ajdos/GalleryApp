@@ -15,7 +15,8 @@ final class HomeAssembly: Assembly {
         let router = HomeRouter(transition: view)
         
         let presenter = HomePresenter()
-        let interactor = HomeInteractor()
+        let homeService = HomeServiceImp()
+        let interactor = HomeInteractor(homeService: homeService)
         
         view.presenter = presenter
         

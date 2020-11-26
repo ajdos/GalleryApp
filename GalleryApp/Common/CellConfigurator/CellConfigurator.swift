@@ -5,4 +5,23 @@
 //  Created by Admin on 25.11.2020.
 //
 
-import Foundation
+import UIKit
+
+protocol ViewConfigurator {
+    
+    static var reuseId: String { get }
+    
+    func configure(cell: UIView)
+    func associatedValue<T>() -> T?
+}
+
+
+protocol TableCellConfiguratorProtocol: ViewConfigurator {
+    var cellHeight: CGFloat { get }
+    var headerHeight: CGFloat { get }
+}
+
+
+protocol CollectionCellConfiguratorProtocol: ViewConfigurator {
+    var size: CGSize { get }
+}
