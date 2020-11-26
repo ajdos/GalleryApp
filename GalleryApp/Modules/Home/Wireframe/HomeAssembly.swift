@@ -14,7 +14,9 @@ final class HomeAssembly: Assembly {
         let view = HomeViewController()
         let router = HomeRouter(transition: view)
         
-        let presenter = HomePresenter()
+        let dataProvider = HomeDataProvider()
+        let presenter = HomePresenter(dataProvider: dataProvider)
+        
         let homeService = HomeServiceImp()
         let interactor = HomeInteractor(homeService: homeService)
         

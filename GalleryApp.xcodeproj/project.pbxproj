@@ -28,6 +28,7 @@
 		F3ACF33D256FCA8400BB4739 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF33C256FCA8400BB4739 /* Register.swift */; };
 		F3ACF340256FCB3600BB4739 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF33F256FCB3600BB4739 /* HomeViewModel.swift */; };
 		F3ACF344256FCB4E00BB4739 /* HomeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF343256FCB4E00BB4739 /* HomeDataProvider.swift */; };
+		F3ACF349256FD96A00BB4739 /* InterfaceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF348256FD96A00BB4739 /* InterfaceUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F3ACF33C256FCA8400BB4739 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		F3ACF33F256FCB3600BB4739 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F3ACF343256FCB4E00BB4739 /* HomeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProvider.swift; sourceTree = "<group>"; };
+		F3ACF348256FD96A00BB4739 /* InterfaceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				F3ACF31B256EB56D00BB4739 /* ModuleTransitionHandler.swift */,
 				F3ACF339256FCA6500BB4739 /* className.swift */,
 				F3ACF33C256FCA8400BB4739 /* Register.swift */,
+				F3ACF348256FD96A00BB4739 /* InterfaceUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				F3ACF316256EB2EF00BB4739 /* Configurable.swift in Sources */,
 				F3ACF340256FCB3600BB4739 /* HomeViewModel.swift in Sources */,
 				F3ACF33D256FCA8400BB4739 /* Register.swift in Sources */,
+				F3ACF349256FD96A00BB4739 /* InterfaceUtils.swift in Sources */,
 				F3ACF33A256FCA6500BB4739 /* className.swift in Sources */,
 				F3ACF2FC256EB07800BB4739 /* HomePresenter.swift in Sources */,
 				F3ACF31C256EB56D00BB4739 /* ModuleTransitionHandler.swift in Sources */,

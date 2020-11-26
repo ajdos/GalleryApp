@@ -18,26 +18,46 @@ protocol HomeInteractorOutput: class {
 
 final class HomePresenter {
     
+    // MARK: - Dependency
+
     weak var view: HomeViewInput?
     var interactor: HomeInteractorInput?
     var router: HomeRouterInput?
+    private let dataProvider: HomeDataProviderInput
     
+    
+    // MARK: - Properties
+
     private var cacheModel: [ImageModel]?
     private var pagination: [String: Any] = [:]
+    
+    
+    // MARK: - Init
+
+    init(dataProvider: HomeDataProviderInput) {
+        self.dataProvider = dataProvider
+    }
+    
 }
 
+
+// MARK: - HomeViewOutput
 extension HomePresenter: HomeViewOutput {
     
     func viewIsReady() {
         interactor?.getImages(pagination: pagination)
     }
-
+    
 }
 
+
+// MARK: - HomeInteractorOutput
 extension HomePresenter: HomeInteractorOutput {
     
     func imagesLoaded(data: [ImageModel]) {
-        print(data)
+        cacheModel = data
+        let viewModel = dataProvider.createViewModel(data: data)
+        view?.update(viewModel: viewModel)
     }
     
     func errorLoaded() {

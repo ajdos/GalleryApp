@@ -31,10 +31,10 @@ final class HomeCell: UICollectionViewCell {
     
     private func setupSubviews() {
         
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = true
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 3
+        imageView.layer.cornerRadius = 20
         imageView.backgroundColor = .gray
         
         contentView.addSubview(imageView)
@@ -46,7 +46,7 @@ final class HomeCell: UICollectionViewCell {
 // MARK: - Configuration
 extension HomeCell: Configurable {
     
-    typealias Model = URL?
+    typealias Model = URL
     
     func configure(with model: Model) {
         imageView.sd_imageIndicator = SDWebImageActivityIndicator.gray

@@ -13,8 +13,8 @@ struct ImageModel: Decodable {
     let author: String
     let width: Int
     let height: Int
-    let url: String
-    let downloadUrl: String
+    let url: URL
+    let downloadUrl: URL
     
     enum CodingKeys: String, CodingKey {
         case id             = "id"

@@ -13,15 +13,22 @@ protocol HomeInteractorInput {
 
 final class HomeInteractor {
    
+    // MARK: - Dependency
+
     weak var presenter: HomeInteractorOutput?
     private let homeService: HomeService
     
+    
+    // MARK: - Init
+
     init(homeService: HomeService) {
         self.homeService = homeService
     }
     
 }
 
+
+// MARK: - HomeInteractorInput
 extension HomeInteractor: HomeInteractorInput {
     
     func getImages(pagination: [String: Any]?) {
@@ -32,6 +39,5 @@ extension HomeInteractor: HomeInteractorInput {
             
             self.presenter?.errorLoaded()
         })
-
     }
 }
